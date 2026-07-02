@@ -3,17 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <title>Opening Word Chain...</title>
-  <script>
-    const params = window.location.search;
-    const deepLink = "wordblocks://play" + params;
-    window.location.replace(deepLink);
-  </script>
 </head>
 <body>
   <p>Opening Word Chain in the app...</p>
   <p><a id="link">Tap here if it doesn't open automatically</a></p>
   <script>
+    const deepLink = "wordblocks://play" + window.location.search;
     document.getElementById("link").href = deepLink;
+    window.location.replace(deepLink);
   </script>
 </body>
 </html>
