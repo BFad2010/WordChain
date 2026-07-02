@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Opening WordBlock...</title>
+</head>
+<body>
+  <p>Opening WordBlock in the app...</p>
+  <p><a id="link">Tap here if it doesn't open automatically</a></p>
+  <script>
+    const deepLink = "wordblocks://wordblock" + window.location.search;
+    document.getElementById("link").href = deepLink;
+    window.location.replace(deepLink);
+  </script>
+</body>
+</html>
